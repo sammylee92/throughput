@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sammylee92-throughput"
+version = "0.1.0"
+description = "按并发、延迟与资源上限反推可支撑的请求量"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "sammylee92" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sammylee92.github.io"
+Repository = "https://github.com/sammylee92/throughput"
+Issues = "https://github.com/sammylee92/throughput/issues"
+
+[project.scripts]
+throughput = "throughput:main"
+
+[tool.setuptools]
+py-modules = ["throughput"]
